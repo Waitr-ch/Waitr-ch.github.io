@@ -1,53 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Waitr</title>
+<head><title>Datacie</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="Waitr-ch.github.io/animations.js"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body data-gr-c-s-loaded="true">
-    <div>
-      <div id="typed-strings" style="display: none;">
-        <p><strong>Waitr</strong> simply order.</p>
-      </div>
-      <div class="container">
-        <span id="typed">
-          <strong>Waitr</strong> simply order.
-        </span>
-        <span class="typed-cursor typed-cursor--blink">|</span>
-      </div>
-    </div>
-    <style type="text/css" data-typed-js-css="true">
-      .typed-cursor{
-        opacity: 1;
-      }
-      .typed-cursor.typed-cursor--blink{
-        animation: typedjsBlink 0.7s infinite;
-        -webkit-animation: typedjsBlink 0.7s infinite;
-                animation: typedjsBlink 0.7s infinite;
-      }
-      @keyframes typedjsBlink{
-        50% { opacity: 1; }
-      }
-      @-webkit-keyframes typedjsBlink{
-        0% { opacity: 1; }
-        50% { opacity: 0.0; }
-        100% { opacity: 1; }
-      }
-      .container {
+</head>
+<body>
+<div>
+    <div id="typed-strings"><p><strong>Waitr</strong> simply order.</p></div>
+    <div class="container"><span id="typed"></span></div>
+</div>
+</body>
+  <style>
+        .container {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        height: calc(100vh - 16px);
-        font-size:calc(12px + 3vw);
+          justify-content: center;
+          align-items: center;
+          height: calc(100vh - 16px);
+          font-size:calc(12px + 3vw);
       }
 
       body {
-        background-color: black;
-        color: white;
+          background-color: red;
+          color: white;
         margin: 0;
       }
-    </style>
-  </body>
+  </style>
 </html>
