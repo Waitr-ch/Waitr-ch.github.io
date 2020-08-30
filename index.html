@@ -1,72 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-body, html {
-  height: 100%
-}
-
-.bgimg {
-  /* Background image */
-  
-  /* Full-screen */
-  height: 100%;
-  /* Center the background image */
-  background-position: center;
-  /* Scale and zoom in the image */
-  background-size: cover;
-  /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
-  position: relative;
-  /* Add a white text color to all elements inside the .bgimg container */
-  color: black;
-  /* Add a font */
-  font-family: "Courier New", Courier, monospace;
-  /* Set the font-size to 25 pixels */
-  font-size: 25px;
-}
-
-/* Position text in the top-left corner */
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-/* Position text in the bottom-left corner */
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Style the <hr> element */
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
-</head>
-<body>
-<div class="bgimg">
-  <div class="topleft">
-    <p>Waitr</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-  </div>
-  <div class="bottomleft">
-    <p>Upgrade your dining experience</p>
-  </div>
-</div>
-
-</body>
+<html lang="en">
+  <head>
+    <title>Waitr</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="javascripts/animations.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+  </head>
+  <body data-gr-c-s-loaded="true">
+    <div>
+      <div id="typed-strings" style="display: none;">
+        <p><strong>Waitr</strong> " simply order."</p>
+      </div>
+      <div class="container">
+        <span id="typed">
+          <strong>Waitr</strong> " simply order."
+        </span>
+        <span class="typed-cursor typed-cursor--blink">|</span>
+      </div>
+    </div>
+    <style type="text/css" data-typed-js-css="true">
+      .typed-cursor{
+        opacity: 1;
+      }
+      .typed-cursor.typed-cursor--blink{
+        animation: typedjsBlink 0.7s infinite;
+        -webkit-animation: typedjsBlink 0.7s infinite;
+                animation: typedjsBlink 0.7s infinite;
+      }
+      @keyframes typedjsBlink{
+        50% { opacity: 1; }
+      }
+      @-webkit-keyframes typedjsBlink{
+        0% { opacity: 1; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1; }
+      }
+    </style>
+  </body>
 </html>
